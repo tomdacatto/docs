@@ -5,7 +5,7 @@ icon: 'hammer'
 ---
 
 <Info>
-Preparation is the process of compiling all your app components into a single encrypted package ready for publishing.
+Preparation is the process of compiling all your app components into a single package ready for publishing.
 </Info>
 
 ## Overview
@@ -20,6 +20,10 @@ When you've finished testing every functionality of your app and it works great,
 <Steps>
   <Step title="Navigate to Preparation Page">
     Go to **Apps** in Exe 6 and select **Prepare** to access the Preparation Page
+
+     <Frame caption="Preparation page">
+      <img src="/images/apps/prepare/image (2).avif" alt="Prepare screen" />
+    </Frame>
   </Step>
   
   <Step title="Select App Components">
@@ -41,9 +45,7 @@ When you've finished testing every functionality of your app and it works great,
     Click the **Prepare** button to start the compilation process
     
     This will:
-    - Compile all selected app components
-    - Encrypt their data for security
-    - Store them in the `Exe6Folder` for distribution
+     Store them in the `Exe6Folder` for distribution
   </Step>
 </Steps>
 
@@ -55,38 +57,25 @@ After preparation, your app will be compiled into the following structure:
 
 ```text Folder Structure
 Exe6Folder/
-├── [YourAppName]
-│   ├── Compiled components
-│   ├── Encrypted data
-│   └── Metadata
-```
-
-```lua Component Example
--- Your scripts are compiled and encrypted
--- Original structure is preserved
-local YourApp = {}
-
-function YourApp:Initialize()
-    -- App initialization logic
-end
-
-return YourApp
+│  App components
 ```
 
 </CodeGroup>
 
 <Warning>
-Ensure all components are properly tested before preparing. Once compiled, the components are encrypted and cannot be easily modified.
+Ensure all components are properly tested before preparing. Once compiled, the components are saved and cannot be easily modified.
 </Warning>
 
 ## The Exe6Folder
 
 The `Exe6Folder` is the container for your prepared app:
 
-<CardGroup cols={2}>
-  <Card title="Encrypted & Secure" icon="lock">
-    All app data is encrypted to protect your code
-  </Card>
+ <Frame caption="Exe 6 App folder">
+      <img src="/images/apps/template/image (1).png" alt="Exe 6 app folder" />
+    </Frame>
+
+<CardGroup cols={1}>
+
   <Card title="Distribution Ready" icon="box">
     Ready to upload to Roblox or share externally
   </Card>
@@ -119,24 +108,3 @@ Once your app components are prepared, you can proceed to publishing:
 </AccordionGroup>
 
 ---
-
-## Image Placeholders
-
-**Recommended images to add:**
-
-```mdx
-<!-- Preparation page interface -->
-<Frame>
-  <img src="/images/apps/prepare-page.png" alt="App Preparation Interface" />
-</Frame>
-
-<!-- Component selection screen -->
-<Frame>
-  <img src="/images/apps/select-components.png" alt="Selecting App Components" />
-</Frame>
-
-<!-- Exe6Folder structure -->
-<Frame>
-  <img src="/images/apps/exe6-folder.png" alt="Exe6Folder Output" />
-</Frame>
-```
