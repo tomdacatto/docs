@@ -1,97 +1,448 @@
 ---
-title: "Introduction"
-description: "Welcome to Flare Studio Developer Guide"
+title: 'App Developer Guide'
+description: 'Everything you need to build powerful apps for Exe 6'
+icon: 'book-open-cover'
 ---
 
-## Setting up
+<Note>
+Welcome to the **Exe 6 App Developer Guide**! This comprehensive resource will help you create, publish, and maintain apps for the Exe 6 ecosystem.
+</Note>
 
-Get your documentation site up and running in minutes.
+## Get Started with App Development
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
+Building apps for Exe 6 allows you to extend the admin panel with custom features and tools. Whether you're creating your first app or you're an experienced developer, this guide has everything you need.
+
+<CardGroup cols={3}>
+  <Card title="Quick Start" icon="rocket" href="/apps/introduction">
+    Learn the basics of Exe 6 apps
+  </Card>
+  <Card title="App Template" icon="code" href="#app-template">
+    Download our starter template
+  </Card>
+  <Card title="Guidelines" icon="book" href="/apps/guidelines">
+    Review app requirements
+  </Card>
+</CardGroup>
+
+---
+
+## Development Workflow
+
+Follow these steps to create and publish your app:
+
+<Steps>
+  <Step title="Set Up Development" icon="hammer">
+    Download the app template and set up your development environment
+    
+    <Card title="App Template" icon="download" href="#app-template">
+      Get the official starter template
+    </Card>
+  </Step>
+  
+  <Step title="Build Your App" icon="code">
+    Develop your app's features using Lua and Roblox Studio
+    
+    - Create unique functionality
+    - Design user interfaces
+    - Test thoroughly
+  </Step>
+  
+  <Step title="Prepare & Package" icon="box">
+    Compile your app components for distribution
+    
+    <Card title="Prepare Your App" icon="hammer" href="/apps/prepare">
+      Learn the preparation process
+    </Card>
+  </Step>
+  
+  <Step title="Publish to Roblox" icon="cloud-arrow-up">
+    Upload your app to the Roblox Creator Store
+    
+    <Card title="Publish Your App" icon="rocket" href="/apps/publish">
+      Follow the publishing guide
+    </Card>
+  </Step>
+  
+  <Step title="Submit for Review" icon="paper-plane">
+    Submit your app to Flare Studio for approval
+    
+    <Card title="Submit for Review" icon="paper-plane" href="/apps/submit">
+      Get your app in the library
+    </Card>
+  </Step>
+  
+  <Step title="Maintain & Update" icon="arrows-rotate">
+    Deploy updates and respond to user feedback
+    
+    <Card title="Update Your App" icon="arrows-rotate" href="/apps/update">
+      Learn about app updates
+    </Card>
+  </Step>
+</Steps>
+
+---
+
+## App Development Guides
+
+<CardGroup cols={2}>
+  <Card title="Introduction to Apps" icon="puzzle-piece" href="/apps/introduction">
+    **Start Here**
+    
+    Understand what Exe 6 apps are and how they work in the ecosystem.
+  </Card>
+  
+  <Card title="Prepare Your App" icon="hammer" href="/apps/prepare">
+    **Development**
+    
+    Learn how to compile and package your app components for distribution.
+  </Card>
+  
+  <Card title="Publish Your App" icon="rocket" href="/apps/publish">
+    **Publishing**
+    
+    Upload your app to Roblox and configure metadata for submission.
+  </Card>
+  
+  <Card title="Submit for Review" icon="paper-plane" href="/apps/submit">
+    **Submission**
+    
+    Submit your app to Flare Studio and get it approved for the library.
+  </Card>
+  
+  <Card title="Update Your App" icon="arrows-rotate" href="/apps/update">
+    **Maintenance**
+    
+    Deploy updates, fixes, and new features to your published apps.
+  </Card>
+  
+  <Card title="App Guidelines" icon="book" href="/apps/guidelines">
+    **Requirements**
+    
+    Follow these standards and requirements for Exe 6 app development.
+  </Card>
+</CardGroup>
+
+---
+
+## Flare Studio Official Resources
+
+<Tabs>
+  <Tab title="App Template" icon="code">
+    ### Official App Template
+    
+    Get started quickly with our official app starter template. It includes:
+    
+    <AccordionGroup>
+      <Accordion title="Project Structure" icon="folder-tree">
+        - Pre-configured folder layout
+        - Example scripts and modules
+        - UI templates
+        - Event system boilerplate
+      </Accordion>
+      
+      <Accordion title="Code Examples" icon="file-code">
+        - App initialization
+        - Settings management
+        - UI interactions
+        - API integration patterns
+      </Accordion>
+      
+      <Accordion title="Best Practices" icon="star">
+        - Clean code organization
+        - Performance optimization tips
+        - Security guidelines
+        - Testing templates
+      </Accordion>
+      
+      <Accordion title="Documentation" icon="book-open">
+        - Setup instructions
+        - API reference
+        - Component documentation
+        - Troubleshooting guide
+      </Accordion>
+    </AccordionGroup>
+    
+    <Card title="Download App Template" icon="download" href="#">
+      Coming Soon - Official Exe 6 App Template
+    </Card>
+    
+    <Tip>
+    The template follows all [App Guidelines](/apps/guidelines) and includes everything you need to start building.
+    </Tip>
+  </Tab>
+  
+  <Tab title="Resources" icon="toolbox">
+    ### Developer Resources
+    
+    <CardGroup cols={2}>
+      <Card title="Discord Community" icon="discord" href="https://discord.gg/fYgfh6eHtA">
+        Join developers building Exe 6 apps
+      </Card>
+      
+      <Card title="API Documentation" icon="book-bookmark" href="#">
+        Exe 6 API reference (Coming Soon)
+      </Card>
+      
+      <Card title="Example Apps" icon="lightbulb" href="#">
+        Study open-source examples
+      </Card>
+      
+      <Card title="Video Tutorials" icon="video" href="#">
+        Step-by-step video guides
+      </Card>
+    </CardGroup>
+  </Tab>
+  
+  <Tab title="Templates" icon="layer-group">
+    ### Additional Templates
+    
+    Specialized templates for common app types:
+    
+    <Accordion title="UI-Heavy Apps">
+      Template for apps with complex user interfaces and multiple screens.
+      
+      - Modern UI components
+      - Navigation system
+      - Responsive layouts
+    </Accordion>
+    
+    <Accordion title="Data Analytics Apps">
+      Template for apps that collect and display statistics.
+      
+      - Data collection framework
+      - Chart/graph integration
+      - Export functionality
+    </Accordion>
+    
+    <Accordion title="Admin Tools">
+      Template for admin management and moderation tools.
+      
+      - Permission system
+      - Command framework
+      - Logging utilities
+    </Accordion>
+    
+    <Accordion title="Integration Apps">
+      Template for apps that connect with external services.
+      
+      - HTTP request handling
+      - Webhook support
+      - API authentication
+    </Accordion>
+    
+    <Note>
+    All specialized templates will be available soon!
+    </Note>
+  </Tab>
+</Tabs>
+
+---
+
+## App Template
+
+The official Exe 6 App Template is designed to help you build apps quickly and efficiently.
+
+### What's Included
+
+<Tabs>
+  <Tab title="Structure">
+    ```lua App Structure
+    YourApp/
+    ├── src/
+    │   ├── Main.lua              -- Entry point
+    │   ├── Config.lua            -- Configuration
+    │   ├── Components/           -- UI Components
+    │   │   ├── MainUI.lua
+    │   │   └── Settings.lua
+    │   ├── Modules/              -- Logic modules
+    │   │   ├── DataHandler.lua
+    │   │   └── EventManager.lua
+    │   └── Utils/                -- Utility functions
+    │       ├── Logger.lua
+    │       └── Helpers.lua
+    ├── assets/                   -- Images, icons
+    └── README.md                 -- Documentation
+    ```
+  </Tab>
+  
+  <Tab title="Features">
+    <CardGroup cols={2}>
+      <Card title="Ready to Use" icon="bolt">
+        Pre-configured structure that works out of the box
+      </Card>
+      
+      <Card title="Best Practices" icon="star">
+        Follows Exe 6 coding standards and patterns
+      </Card>
+      
+      <Card title="Well Documented" icon="file-lines">
+        Comments and guides throughout the code
+      </Card>
+      
+      <Card title="Modular Design" icon="cubes">
+        Easy to extend and customize for your needs
+      </Card>
+    </CardGroup>
+  </Tab>
+  
+  <Tab title="Quick Start">
+    ### Get Started in Minutes
+    
+    <Steps>
+      <Step title="Download Template">
+        Get the template from our resources
+      </Step>
+      
+      <Step title="Open in Roblox Studio">
+        Import the template into your Studio workspace
+      </Step>
+      
+      <Step title="Customize">
+        Modify the template to fit your app's needs
+      </Step>
+      
+      <Step title="Test">
+        Test your app thoroughly before publishing
+      </Step>
+      
+      <Step title="Prepare & Publish">
+        Follow the [publishing guide](/apps/publish)
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+<Card title="Download App Template" icon="download" href="#">
+  **Coming Soon** - Official Exe 6 App Template
 </Card>
 
-## Make it yours
+---
 
-Design a docs site that looks great and empowers your users.
+## Development Best Practices
 
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
-  </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
+<AccordionGroup>
+  <Accordion title="Code Quality" icon="code">
+    - Write clean, readable code
+    - Use meaningful variable names
+    - Comment complex logic
+    - Follow Lua style guidelines
+    - Keep functions small and focused
+  </Accordion>
+  
+  <Accordion title="Performance" icon="gauge-high">
+    - Minimize script execution time
+    - Avoid memory leaks
+    - Use efficient data structures
+    - Profile your code regularly
+    - Optimize UI rendering
+  </Accordion>
+  
+  <Accordion title="Testing" icon="vial">
+    - Test all features thoroughly
+    - Test on different devices
+    - Test with multiple users
+    - Handle edge cases
+    - Test error scenarios
+  </Accordion>
+  
+  <Accordion title="User Experience" icon="heart">
+    - Design intuitive interfaces
+    - Provide clear feedback
+    - Handle errors gracefully
+    - Keep UI responsive
+    - Document features for users
+  </Accordion>
+  
+  <Accordion title="Security" icon="shield">
+    - Validate all user input
+    - Use secure data storage
+    - Don't expose sensitive data
+    - Follow Exe 6 security guidelines
+    - Test for vulnerabilities
+  </Accordion>
+</AccordionGroup>
 
-## Create beautiful pages
+---
 
-Everything you need to create world-class documentation.
+## Community & Support
 
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
+<CardGroup cols={2}>
+  <Card title="Join Discord" icon="discord" href="https://discord.gg/fYgfh6eHtA">
+    **Get Help & Connect**
+    
+    - Ask questions in #app-development
+    - Share your progress
+    - Get feedback from other developers
+    - Stay updated on new features
   </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
+  
+  <Card title="Showcase Your App" icon="star">
+    **Share with the Community**
+    
+    - Post in #apps channel
+    - Get featured on our website
+    - Build your reputation
+    - Receive valuable feedback
   </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
+</CardGroup>
 
-## Need inspiration?
+---
 
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+## Next Steps
+
+Ready to start building? Here's what to do next:
+
+<Steps>
+  <Step title="Read the Guidelines">
+    Familiarize yourself with [App Guidelines](/apps/guidelines) to ensure your app meets all requirements.
+  </Step>
+  
+  <Step title="Download the Template">
+    Get the official app template to start with a solid foundation.
+  </Step>
+  
+  <Step title="Join the Community">
+    Connect with other developers on [Discord](https://discord.gg/fYgfh6eHtA) for support and inspiration.
+  </Step>
+  
+  <Step title="Start Building">
+    Begin developing your app's unique features and functionality.
+  </Step>
+</Steps>
+
+<Tip>
+Have questions? The Flare Studio team and community are here to help in our Discord server!
+</Tip>
+
+---
+
+## Quick Reference
+
+<Tabs>
+  <Tab title="Links">
+    ### Essential Links
+    
+    - [Introduction to Apps](/apps/introduction)
+    - [Prepare Your App](/apps/prepare)
+    - [Publish Your App](/apps/publish)
+    - [Submit for Review](/apps/submit)
+    - [Update Your App](/apps/update)
+    - [App Guidelines](/apps/guidelines)
+    - [Discord Community](https://discord.gg/fYgfh6eHtA)
+  </Tab>
+  
+  <Tab title="Checklist">
+    ### Pre-Submission Checklist
+    
+    - [ ] Read all documentation
+    - [ ] Review app guidelines
+    - [ ] Test all features
+    - [ ] Create app icon (512x512)
+    - [ ] Write clear description
+    - [ ] Set metadata properly
+    - [ ] Prepare app components
+    - [ ] Publish to Roblox
+    - [ ] Enable Creator Store distribution
+    - [ ] Submit on Discord
+  </Tab>
+</Tabs>

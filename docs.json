@@ -23,6 +23,12 @@
           "apps/update",
           "apps/guidelines"
         ]
+      },
+      {
+          "group": "introduction",
+          "pages": [
+          "index"
+        ]
       }
       ]
       }
