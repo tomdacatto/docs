@@ -16,12 +16,12 @@
           {
           "group": "Apps",
           "pages": [
-          "apps/introduction",
-          "apps/prepare",
-          "apps/publish",
-          "apps/submit",
-          "apps/update",
-          "apps/guidelines"
+          "apps/apps-introduction",
+          "apps/apps-prepare",
+          "apps/apps-publish",
+          "apps/apps-submit",
+          "apps/apps-update",
+          "apps/apps-guidelines"
         ]
       }
       ]
