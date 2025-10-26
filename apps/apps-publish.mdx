@@ -1,0 +1,182 @@
+---
+title: 'Publish Your App'
+description: 'Upload your app to Roblox and configure it for the Exe 6 ecosystem'
+icon: 'rocket'
+---
+
+<Info>
+Publishing uploads your prepared app to Roblox, making it available for submission to the Exe 6 App Library.
+</Info>
+
+## Prerequisites
+
+<Check>
+Ensure you have [prepared your app](/apps/prepare) before starting the publishing process.
+</Check>
+
+## Publishing Steps
+
+<Steps>
+  <Step title="Upload to Roblox">
+    Right-click the **Exe6Folder** and select **"Save to Roblox..."**
+    
+    <Note>
+    The Exe6Folder contains your compiled and encrypted app components from the preparation step.
+    </Note>
+  </Step>
+  
+  <Step title="Configure App Details">
+    A window will appear with the following fields:
+    
+    - **Title**: Enter your app name (this will be displayed in the App Library)
+    - **Description**: We'll configure this in the next step
+    
+    Click **Save** after entering your app name.
+  </Step>
+  
+  <Step title="Access Roblox Create">
+    After saving, a window will display a `.../configure` link. Click this link to be redirected to the **Roblox Create** website where you'll configure additional app metadata.
+  </Step>
+</Steps>
+
+## App Metadata Configuration
+
+The description field contains essential metadata for your app. Follow this format:
+
+<CodeGroup>
+
+```text Metadata Format
+Description: [Your app's main description]
+
+Tag: [Short, persuasive tagline]
+
+Icon: [Asset ID of your square icon]
+
+Color: [Hex code for theme color]
+
+Minimum: [Minimum Exe 6 build number]
+```
+
+```text Example
+Description: Advanced analytics dashboard for tracking player behavior and server statistics in real-time.
+
+Tag: Powerful analytics at your fingertips
+
+Icon: rbxassetid://1234567890
+
+Color: #6366F1
+
+Minimum: 606
+```
+
+</CodeGroup>
+
+### Metadata Properties
+
+<ParamField path="Description" type="string" required>
+  The main description of your app. Explain what it does and why users should install it. Be clear and concise.
+</ParamField>
+
+<ParamField path="Tag" type="string" required>
+  A short but persuasive tagline for your app. This appears on the app card in the library. Keep it under 50 characters.
+</ParamField>
+
+<ParamField path="Icon" type="assetid" required>
+  A square icon for your app (recommended size: 512x512px). Upload to Roblox and use the asset ID.
+  
+  <Warning>
+  Icons must follow the [App Guidelines](/apps/guidelines) - no app names in the icon!
+  </Warning>
+</ParamField>
+
+<ParamField path="Color" type="hex" required>
+  The hex code for your app's theme color (e.g., `#6366F1`). This color is used in the UI.
+  
+  <Tip>
+  Pick a color from your icon to match the aesthetic and create a cohesive visual identity.
+  </Tip>
+</ParamField>
+
+<ParamField path="Minimum" type="number" required>
+  The minimum Exe 6 build number required to run your app. If a user has a lower build, they cannot install your app.
+  
+  Example: `606` for build 606
+</ParamField>
+
+## Enable Distribution
+
+<Steps>
+  <Step title="Enable Creator Store Distribution">
+    On the Roblox Create configuration page, find and enable the option:
+    
+    **"Distribute on Creator Store"**
+    
+    <Warning>
+    This option must be enabled for your app to be accessible for submission.
+    </Warning>
+  </Step>
+  
+  <Step title="Save Your Changes">
+    Click the **"Save Changes"** button to finalize your app configuration.
+  </Step>
+</Steps>
+
+## What Happens Next?
+
+After publishing, your app is ready for submission to Flare Studio for review.
+
+<Card title="Submit for Review" icon="paper-plane" href="/apps/submit">
+  Learn how to submit your app to the Exe 6 App Library
+</Card>
+
+---
+
+## Metadata Checklist
+
+Before moving to submission, ensure:
+
+<Accordion title="Description Quality">
+  - [ ] Clear explanation of app features
+  - [ ] Proper grammar and spelling
+  - [ ] Highlights unique value proposition
+</Accordion>
+
+<Accordion title="Visual Assets">
+  - [ ] Icon is square and follows guidelines
+  - [ ] Icon doesn't contain app name
+  - [ ] Color complements the icon design
+</Accordion>
+
+<Accordion title="Technical Requirements">
+  - [ ] Minimum build is correctly set
+  - [ ] All metadata fields are filled
+  - [ ] Creator Store distribution is enabled
+</Accordion>
+
+---
+
+## Image Placeholders
+
+**Recommended images to add:**
+
+```mdx
+<!-- Save to Roblox dialog -->
+<Frame>
+  <img src="/images/apps/save-to-roblox.png" alt="Save to Roblox Dialog" />
+</Frame>
+
+<!-- Configure link window -->
+<Frame>
+  <img src="/images/apps/configure-link.png" alt="Configure Link Window" />
+</Frame>
+
+<!-- Roblox Create configuration page -->
+<Frame>
+  <img src="/images/apps/roblox-create-config.png" alt="Roblox Create Configuration" />
+</Frame>
+
+<!-- Metadata format example -->
+<Frame>
+  <img src="/images/apps/metadata-example.png" alt="App Metadata Example" />
+</Frame>
+```

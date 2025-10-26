@@ -1,0 +1,331 @@
+---
+title: 'App Guidelines'
+description: 'Standards and requirements for developing Exe 6 apps'
+icon: 'book'
+---
+
+<Warning>
+By submitting your app on our Discord Server, you agree that you've read and will follow these Standards and Guidelines.
+</Warning>
+
+## Overview
+
+These guidelines ensure all Exe 6 apps maintain high quality, safety, and provide value to the community. All app developers must follow these rules.
+
+---
+
+## Community Standards
+
+<Card title="Roblox Community Standards" icon="shield-check" href="https://en.help.roblox.com/hc/en-us/articles/203313410-Roblox-Community-Standards">
+  Your app must comply with Roblox's Community Standards
+</Card>
+
+### Platform Compliance
+
+<Check>
+Your app **must** be approved by Roblox and follow their Community Standards. Apps violating Roblox's rules will be rejected.
+</Check>
+
+Review Roblox's guidelines for:
+- Appropriate content
+- User safety
+- Privacy protection
+- Intellectual property
+- Community behavior
+
+### Community Feedback
+
+<Info>
+The insights, feedback, and comments of the community towards your app will be heavily considered.
+</Info>
+
+If the community identifies your app as defective, problematic, or harmful, it will be removed from the App Library regardless of initial approval.
+
+**Examples of community concerns:**
+- Frequent crashes or bugs
+- Poor user experience
+- Misleading descriptions
+- Privacy violations
+- Malicious behavior
+
+---
+
+## Technical Requirements
+
+### Unique Value Proposition
+
+<CardGroup cols={2}>
+  <Card title="Original Features" icon="lightbulb">
+    Your app must serve unique features and options
+  </Card>
+  <Card title="No Duplicates" icon="ban">
+    Don't copy Exe 6's existing functionality
+  </Card>
+</CardGroup>
+
+<Warning>
+Your app's features should **not** be a carbon copy of Exe 6's core features. Provide unique value to users.
+</Warning>
+
+### Component Replacements
+
+<Accordion title="Minimize Component Replacements">
+  Avoid replacing core Exe 6 components whenever possible.
+  
+  **Why?**
+  - May lead to misbehavior of Exe 6
+  - Can cause conflicts with other apps
+  - May result in rejection from the App Library
+  
+  **Best Practice:**
+  Work alongside existing components rather than replacing them.
+</Accordion>
+
+### Functionality & Stability
+
+Your app must:
+
+<Steps>
+  <Step title="Work Properly">
+    All features must function as intended without errors
+  </Step>
+  <Step title="Be Stable">
+    No crashes, memory leaks, or performance issues
+  </Step>
+  <Step title="Be Non-Disruptive">
+    Must not interfere with normal gameplay or Exe 6 operations
+  </Step>
+</Steps>
+
+<Check>
+Ensure your app works and functions properly. Otherwise, it will not be accepted.
+</Check>
+
+### Scope & Integration
+
+<Warning>
+Your app must not be disruptive to the gameplay and must only orbit around Exe 6.
+</Warning>
+
+**Acceptable:**
+- Extends Exe 6 functionality
+- Adds new admin tools
+- Enhances user interface
+- Provides analytics or insights
+
+**Not Acceptable:**
+- Modifies core gameplay mechanics
+- Interferes with player experience
+- Conflicts with other Exe 6 features
+- Operates outside Exe 6's scope
+
+---
+
+## Information & Presentation
+
+### App Description
+
+<ParamField path="Description" type="string" required>
+  Must be relevant to your app's features and options. Clearly explain what your app does.
+</ParamField>
+
+**Good Description Example:**
+```text
+Real-time analytics dashboard that tracks player behavior, 
+server performance, and provides actionable insights for 
+server administrators.
+```
+
+**Bad Description Example:**
+```text
+Cool app that does stuff. Very good. Install now!
+```
+
+### App Tag
+
+<ParamField path="Tag" type="string" required>
+  Short but persuasive description shown on the app card. Must be relevant to your app.
+</ParamField>
+
+Keep it:
+- Under 50 characters
+- Descriptive and specific
+- Professional and clear
+
+### App Icon Requirements
+
+<Warning>
+App Icons must **not** display the app name!
+</Warning>
+
+#### Icon Design Rules
+
+<CardGroup cols={2}>
+  <Card title="Use Glyphs" icon="icons">
+    Opt for a distinct glyph or symbol
+  </Card>
+  <Card title="Single Letter" icon="a">
+    Or use the first letter of your app name
+  </Card>
+</CardGroup>
+
+<Accordion title="Icon Text Limit">
+  You can only put a **maximum of one (1) word** in your icon.
+  
+  <Warning>
+  This word must **NOT** be your App Name!
+  </Warning>
+</Accordion>
+
+#### Icon Specifications
+
+- **Size:** 512x512 pixels (recommended)
+- **Format:** PNG with transparency
+- **Style:** Clear, recognizable, professional
+- **Text:** Maximum 1 word (not app name)
+
+#### Icon Examples
+
+<Frame caption="Example of correct icon design">
+  <img src="https://cdn.discordapp.com/attachments/1388262287583739925/1389113470196125777/App_icon_Guidelines.png" alt="App Icon Guidelines Example" />
+</Frame>
+
+**Good Icons:**
+- Single distinct glyph (⚡, 📊, 🎯)
+- First letter stylized (A, M, P)
+- Simple geometric design
+
+**Bad Icons:**
+- Full app name text
+- Multiple words
+- Cluttered design
+- Low resolution
+
+---
+
+## Compliance Checklist
+
+Before submitting, verify your app meets all requirements:
+
+<Tabs>
+  <Tab title="Community">
+    <AccordionGroup>
+      <Accordion title="Platform Compliance" icon="check">
+        - [ ] Follows Roblox Community Standards
+        - [ ] No inappropriate content
+        - [ ] Respects user privacy
+        - [ ] No intellectual property violations
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+  
+  <Tab title="Technical">
+    <AccordionGroup>
+      <Accordion title="Functionality" icon="gear">
+        - [ ] All features work properly
+        - [ ] No crashes or errors
+        - [ ] Good performance
+        - [ ] Non-disruptive to gameplay
+      </Accordion>
+      
+      <Accordion title="Uniqueness" icon="sparkles">
+        - [ ] Provides unique features
+        - [ ] Not a copy of Exe 6 features
+        - [ ] Minimal component replacement
+        - [ ] Adds clear value
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+  
+  <Tab title="Information">
+    <AccordionGroup>
+      <Accordion title="Metadata" icon="file-lines">
+        - [ ] Description is clear and relevant
+        - [ ] Tag is short and persuasive
+        - [ ] All required fields filled
+      </Accordion>
+      
+      <Accordion title="Visual Assets" icon="image">
+        - [ ] Icon is 512x512px
+        - [ ] Icon doesn't show app name
+        - [ ] Icon has 0-1 words max
+        - [ ] Icon is clear and professional
+        - [ ] Color matches aesthetic
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+</Tabs>
+
+---
+
+## Enforcement
+
+### Violation Consequences
+
+<AccordionGroup>
+  <Accordion title="Minor Violations" icon="triangle-exclamation">
+    - Request for corrections
+    - Resubmission required
+    - Temporary hold on approval
+  </Accordion>
+  
+  <Accordion title="Major Violations" icon="circle-xmark">
+    - Immediate rejection
+    - Removal from App Library
+    - Potential developer ban
+  </Accordion>
+</AccordionGroup>
+
+### Appeal Process
+
+If your app is rejected:
+
+1. Review the rejection reason
+2. Make necessary corrections
+3. Resubmit with changes documented
+4. Respond to reviewer feedback
+
+---
+
+## Resources
+
+<CardGroup cols={2}>
+  <Card title="Prepare Your App" icon="hammer" href="/apps/prepare">
+    Learn how to structure your app
+  </Card>
+  <Card title="Publish Your App" icon="rocket" href="/apps/publish">
+    Upload to Roblox Creator Store
+  </Card>
+  <Card title="Submit for Review" icon="paper-plane" href="/apps/submit">
+    Get your app reviewed
+  </Card>
+  <Card title="Update Your App" icon="arrows-rotate" href="/apps/update">
+    Deploy updates and fixes
+  </Card>
+</CardGroup>
+
+<Card title="Join Discord Community" icon="discord" href="https://discord.gg/fYgfh6eHtA">
+  Get help and connect with other developers
+</Card>
+
+---
+
+## Image Placeholders
+
+**Recommended images to add:**
+
+```mdx
+<!-- Good vs bad icon examples -->
+<Frame>
+  <img src="/images/apps/icon-examples-good.png" alt="Good Icon Examples" />
+</Frame>
+
+<Frame>
+  <img src="/images/apps/icon-examples-bad.png" alt="Bad Icon Examples" />
+</Frame>
+
+<!-- App metadata example -->
+<Frame>
+  <img src="/images/apps/metadata-complete.png" alt="Complete App Metadata" />
+</Frame>
+```

@@ -1,0 +1,142 @@
+---
+title: 'Prepare Your App'
+description: 'Compile and package your app components for distribution'
+icon: 'hammer'
+---
+
+<Info>
+Preparation is the process of compiling all your app components into a single encrypted package ready for publishing.
+</Info>
+
+## Overview
+
+When you've finished testing every functionality of your app and it works great, you can proceed with preparing. This step compiles all components into a distributable format suitable for:
+
+- **Publishing** to the Exe 6 App Library
+- **External distribution** as a downloadable app
+
+## Preparation Process
+
+<Steps>
+  <Step title="Navigate to Preparation Page">
+    Go to **Apps** in Exe 6 and select **Prepare** to access the Preparation Page
+  </Step>
+  
+  <Step title="Select App Components">
+    Choose all components that make up your app:
+    
+    <Accordion title="Component Types">
+      - **Scripts** - All Lua scripts and logic
+      - **UIs** - User interface elements and screens
+      - **Events** - Event handlers and triggers
+      - **Objects** - Additional game objects and assets
+    </Accordion>
+    
+    <Tip>
+    The "Prepare" button displays how many components you've selected
+    </Tip>
+  </Step>
+  
+  <Step title="Compile Your App">
+    Click the **Prepare** button to start the compilation process
+    
+    This will:
+    - Compile all selected app components
+    - Encrypt their data for security
+    - Store them in the `Exe6Folder` for distribution
+  </Step>
+</Steps>
+
+## Output Structure
+
+After preparation, your app will be compiled into the following structure:
+
+<CodeGroup>
+
+```text Folder Structure
+Exe6Folder/
+├── [YourAppName]
+│   ├── Compiled components
+│   ├── Encrypted data
+│   └── Metadata
+```
+
+```lua Component Example
+-- Your scripts are compiled and encrypted
+-- Original structure is preserved
+local YourApp = {}
+
+function YourApp:Initialize()
+    -- App initialization logic
+end
+
+return YourApp
+```
+
+</CodeGroup>
+
+<Warning>
+Ensure all components are properly tested before preparing. Once compiled, the components are encrypted and cannot be easily modified.
+</Warning>
+
+## The Exe6Folder
+
+The `Exe6Folder` is the container for your prepared app:
+
+<CardGroup cols={2}>
+  <Card title="Encrypted & Secure" icon="lock">
+    All app data is encrypted to protect your code
+  </Card>
+  <Card title="Distribution Ready" icon="box">
+    Ready to upload to Roblox or share externally
+  </Card>
+</CardGroup>
+
+## Next Steps
+
+Once your app components are prepared, you can proceed to publishing:
+
+<Card title="Publish Your App" icon="rocket" href="/apps/publish">
+  Learn how to upload your prepared app to Roblox
+</Card>
+
+---
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Component selection not showing">
+    Make sure all your app components are properly placed in your Exe 6 workspace and are not inside restricted folders.
+  </Accordion>
+  
+  <Accordion title="Prepare button is disabled">
+    You must select at least one component before the Prepare button becomes active.
+  </Accordion>
+  
+  <Accordion title="Compilation fails">
+    Check that none of your components have syntax errors or missing dependencies. Test each component individually before preparing.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Image Placeholders
+
+**Recommended images to add:**
+
+```mdx
+<!-- Preparation page interface -->
+<Frame>
+  <img src="/images/apps/prepare-page.png" alt="App Preparation Interface" />
+</Frame>
+
+<!-- Component selection screen -->
+<Frame>
+  <img src="/images/apps/select-components.png" alt="Selecting App Components" />
+</Frame>
+
+<!-- Exe6Folder structure -->
+<Frame>
+  <img src="/images/apps/exe6-folder.png" alt="Exe6Folder Output" />
+</Frame>
+```

@@ -1,0 +1,260 @@
+---
+title: 'Update Your App'
+description: 'Deploy updates, fixes, and new features to your published apps'
+icon: 'arrows-rotate'
+---
+
+<Info>
+Keep your app fresh with regular updates. Users can manually update installed apps to get the latest features and fixes.
+</Info>
+
+## Why Update Your App?
+
+Regular updates help you:
+
+<CardGroup cols={2}>
+  <Card title="Fix Bugs" icon="wrench">
+    Address issues and improve stability
+  </Card>
+  <Card title="Add Features" icon="sparkles">
+    Introduce new functionality based on feedback
+  </Card>
+  <Card title="Improve Performance" icon="gauge-high">
+    Optimize code and reduce resource usage
+  </Card>
+  <Card title="Stay Compatible" icon="shield-check">
+    Ensure compatibility with new Exe 6 builds
+  </Card>
+</CardGroup>
+
+## Update Process
+
+<Steps>
+  <Step title="Prepare Updated Version">
+    Make your changes and test thoroughly. Once ready, [prepare your app](/apps/prepare) again with the updated components.
+    
+    <Check>
+    Ensure your app is fully tested before proceeding with the update.
+    </Check>
+  </Step>
+  
+  <Step title="Open Upload Dialog">
+    Right-click the **Exe6Folder** and select **"Save to Roblox..."**
+    
+    <Note>
+    This is the same process as the initial publish, but we'll use the overwrite feature.
+    </Note>
+  </Step>
+  
+  <Step title="Select Model Category">
+    When the window appears, select **"Model"** for the Asset Category.
+    
+    <Frame caption="Select Model as the asset category">
+      <img src="/images/apps/asset-category-model.png" alt="Asset Category Selection" />
+    </Frame>
+  </Step>
+  
+  <Step title="Choose Overwrite Option">
+    On the bottom-left of the window, click:
+    
+    **"Overwrite an existing asset..."**
+    
+    <Warning>
+    Make sure you select the correct asset to overwrite. This action cannot be undone!
+    </Warning>
+  </Step>
+  
+  <Step title="Select Your App Asset">
+    A list of your Roblox assets will appear. Find and click the **App Asset** you previously uploaded, then click **"Save"**.
+    
+    Your app is now updated on Roblox!
+  </Step>
+</Steps>
+
+## Update App Metadata (Optional)
+
+You can also update your app's name and description:
+
+<Accordion title="Modify App Information">
+  1. Navigate to the Roblox Create website
+  2. Find your app asset
+  3. Click the **Configure** link
+  4. Update the **Name** and **Description** fields
+  5. Click **"Save Changes"**
+  
+  This gives you full control over your app's presentation in the library.
+</Accordion>
+
+## Best Practices
+
+<Tabs>
+  <Tab title="Version Control">
+    ### Track Your Changes
+    
+    Maintain a version history for your app:
+    
+    ```lua Example Version Tracking
+    -- In your app's main module
+    local AppInfo = {
+        Name = "MyAwesomeApp",
+        Version = "1.2.0",
+        LastUpdated = "2025-10-26",
+        Changes = {
+            "Fixed crash when opening settings",
+            "Added dark mode support",
+            "Improved performance by 30%"
+        }
+    }
+    ```
+    
+    <Tip>
+    Use semantic versioning (major.minor.patch) to communicate the type of update.
+    </Tip>
+  </Tab>
+  
+  <Tab title="Changelog">
+    ### Communicate Updates
+    
+    Always document what changed in each update:
+    
+    - **Major updates** (2.0.0) - Breaking changes or major features
+    - **Minor updates** (1.1.0) - New features, backwards compatible
+    - **Patch updates** (1.0.1) - Bug fixes and small improvements
+    
+    Post changelogs in your Discord or app documentation.
+  </Tab>
+  
+  <Tab title="Testing">
+    ### Test Before Releasing
+    
+    Before updating:
+    
+    <AccordionGroup>
+      <Accordion title="Regression Testing">
+        Test all existing features to ensure nothing broke
+      </Accordion>
+      <Accordion title="New Feature Testing">
+        Thoroughly test all new additions
+      </Accordion>
+      <Accordion title="Compatibility Testing">
+        Verify compatibility with current Exe 6 builds
+      </Accordion>
+      <Accordion title="Performance Testing">
+        Check that performance hasn't degraded
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+  
+  <Tab title="User Communication">
+    ### Keep Users Informed
+    
+    - Announce updates in Discord
+    - Highlight major new features
+    - Provide migration guides for breaking changes
+    - Respond to user feedback quickly
+    
+    <Card title="Join the Community" icon="discord" href="https://discord.gg/fYgfh6eHtA">
+      Stay connected with your users
+    </Card>
+  </Tab>
+</Tabs>
+
+## Update Frequency
+
+<CardGroup cols={3}>
+  <Card title="Critical Fixes" icon="siren">
+    **Immediate**
+    
+    Deploy ASAP for crashes or security issues
+  </Card>
+  <Card title="Feature Updates" icon="calendar">
+    **Monthly**
+    
+    Regular updates with new features
+  </Card>
+  <Card title="Maintenance" icon="screwdriver-wrench">
+    **As Needed**
+    
+    Performance improvements and minor fixes
+  </Card>
+</CardGroup>
+
+## User Update Experience
+
+Users can update apps in two ways:
+
+<Steps>
+  <Step title="Manual Update Check">
+    Users navigate to their installed apps and click **"Check for Updates"**
+  </Step>
+  <Step title="Update Available Notification">
+    If an update is available, they'll see an update prompt
+  </Step>
+  <Step title="One-Click Update">
+    Users click **"Update"** to install the latest version
+  </Step>
+</Steps>
+
+<Note>
+Updates are not automatic. Users must manually update their installed apps.
+</Note>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Update not appearing for users">
+    - Wait 5-10 minutes for Roblox cache to update
+    - Verify you overwrote the correct asset
+    - Check that the asset ID hasn't changed
+  </Accordion>
+  
+  <Accordion title="Overwrite option not available">
+    - Ensure you're logged into the correct Roblox account
+    - Verify you have permission to edit the asset
+    - Try refreshing Roblox Studio
+  </Accordion>
+  
+  <Accordion title="Users report broken app after update">
+    - Immediately roll back to previous version
+    - Test the update more thoroughly
+    - Post a notice in Discord about the issue
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Continuous Improvement
+
+Keep your app competitive and valuable:
+
+<Card title="App Guidelines" icon="book" href="/apps/guidelines">
+  Review guidelines to ensure compliance with each update
+</Card>
+
+---
+
+## Image Placeholders
+
+**Recommended images to add:**
+
+```mdx
+<!-- Asset category selection -->
+<Frame>
+  <img src="/images/apps/asset-category-model.png" alt="Select Model Category" />
+</Frame>
+
+<!-- Overwrite option location -->
+<Frame>
+  <img src="/images/apps/overwrite-option.png" alt="Overwrite Existing Asset Option" />
+</Frame>
+
+<!-- Asset selection list -->
+<Frame>
+  <img src="/images/apps/select-asset.png" alt="Select Asset to Overwrite" />
+</Frame>
+
+<!-- Update success confirmation -->
+<Frame>
+  <img src="/images/apps/update-success.png" alt="Update Successful" />
+</Frame>
+```
